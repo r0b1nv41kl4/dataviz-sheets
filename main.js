@@ -46,7 +46,7 @@ async function drawCharts() {
 
   const first = sheets[0];
     const steps = readings(first, 'steps_count');
-  draw('steps', 'bar', 'Steps', [
+  draw('steps', 'line', 'Steps', [
     { label: first.name, data: steps },
   ])
   const minutes = readings(first, 'screen_total_min')
